@@ -3,15 +3,68 @@
   <ProjectSession>
     <Version Value="9"/>
     <BuildModes Active="Default"/>
-    <Units Count="1">
+    <Units Count="3">
       <Unit0>
         <Filename Value="threadexample.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <UsageCount Value="20"/>
+        <TopLine Value="75"/>
+        <CursorPos X="20" Y="86"/>
+        <UsageCount Value="21"/>
         <Loaded Value="True"/>
       </Unit0>
+      <Unit1>
+        <Filename Value="/usr/share/fpcsrc/3.0.0/packages/fcl-base/src/fptimer.pp"/>
+        <UnitName Value="fpTimer"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="38"/>
+        <CursorPos X="17" Y="48"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="/usr/share/fpcsrc/3.0.0/packages/fcl-base/src/custapp.pp"/>
+        <UnitName Value="CustApp"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="72"/>
+        <CursorPos X="3" Y="87"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit2>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory Count="8" HistoryIndex="7">
+      <Position1>
+        <Filename Value="threadexample.lpr"/>
+        <Caret Line="77" TopLine="77"/>
+      </Position1>
+      <Position2>
+        <Filename Value="/usr/share/fpcsrc/3.0.0/packages/fcl-base/src/fptimer.pp"/>
+        <Caret Line="64" Column="3" TopLine="54"/>
+      </Position2>
+      <Position3>
+        <Filename Value="threadexample.lpr"/>
+        <Caret Line="77" TopLine="92"/>
+      </Position3>
+      <Position4>
+        <Filename Value="threadexample.lpr"/>
+        <Caret Line="103" Column="36" TopLine="60"/>
+      </Position4>
+      <Position5>
+        <Filename Value="threadexample.lpr"/>
+        <Caret Line="76" Column="4" TopLine="60"/>
+      </Position5>
+      <Position6>
+        <Filename Value="threadexample.lpr"/>
+        <Caret Line="70" Column="4" TopLine="17"/>
+      </Position6>
+      <Position7>
+        <Filename Value="/usr/share/fpcsrc/3.0.0/packages/fcl-base/src/fptimer.pp"/>
+        <Caret Line="42" Column="5" TopLine="47"/>
+      </Position7>
+      <Position8>
+        <Filename Value="/usr/share/fpcsrc/3.0.0/packages/fcl-base/src/fptimer.pp"/>
+        <Caret Line="48" Column="17" TopLine="38"/>
+      </Position8>
+    </JumpHistory>
   </ProjectSession>
 </CONFIG>
