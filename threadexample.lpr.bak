@@ -6,8 +6,9 @@ uses
   {$IFDEF UNIX}
   cthreads,
   {$ENDIF}
-  Classes, SysUtils, CustApp
-  { you can add units after this };
+  Classes, SysUtils, CustApp,
+  { you can add units after this }
+  FPTimer;
 
 type
 
@@ -23,7 +24,10 @@ type
   TThreadExample = class(TCustomApplication)
   protected
     FThread : TCountDownThread;
+    FTimer  : TFPTimer;
     procedure DoRun; override;
+    procedure CreateAndStartThread;
+    procedure OnTimerTick( Sender : TObject);
   public
     constructor Create(TheOwner : TComponent); override;
     destructor Destroy; override;
@@ -50,7 +54,7 @@ begin
     Sleep(WaitSeconds * 1000);
     SecondCount := SecondCount - 1;
   until SecondCount = 0;
-  WriteLn(SecondCount);
+  WriteLn('Thread: ' + IntToStr(SecondCount));
 end;
 
 { TThreadExample }
@@ -61,12 +65,14 @@ var
 begin
 
   { add your program heore }
-  FThread.Resume;
+  CreateAndStartThread;
+  FTimer.StartTimer;
 
-  while (not FThread.Finished) do
+  while FTimer.Enabled do
   begin
-    WriteLn('waiting for thread to finish');
-    Sleep(100);
+    WriteLn('Main: waiting...');
+    CheckSynchronize;
+    Sleep(500);
   end;
 
   // stop program loop
@@ -77,12 +83,39 @@ constructor TThreadExample.Create(TheOwner : TComponent);
 begin
   inherited Create(TheOwner);
   StopOnException := True;
-  FThread := TCountDownThread.Create(true);
+
+  FTimer := TFPTimer.Create(self);
+  FTimer.Enabled  := false;
+  FTimer.Interval := 5000;
+  FTimer.OnTimer  := @OnTimerTick;
 end;
 
 destructor TThreadExample.Destroy;
 begin
   inherited Destroy;
+end;
+
+procedure TThreadExample.CreateAndStartThread;
+begin
+  if Assigned(FThread) and (not FThread.Finished) then
+    raise Exception.Create('Timer: Thread is already running.');
+  if Assigned(FThread) and FThread.Finished then
+    FThread := nil;
+  FThread := TCountDownThread.Create(true);
+  FThread.Resume;
+  WriteLn('Timer: Thread started');
+end;
+
+procedure TThreadExample.OnTimerTick(Sender : TObject);
+begin
+  WriteLn('--- Tick ---');
+  try
+    WriteLn('Timer: trying to start Thread');
+    CreateAndStartThread;
+  except
+    on e : Exception do
+      WriteLn(e.Message);
+  end;
 end;
 
 var
