@@ -1,0 +1,10 @@
+/backup
+/lib
+/bin
+**/*.lps
+**/.compiled
+**/.o
+**/.or
+**/.ppu
+**/.res
+**/.rst

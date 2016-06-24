@@ -39,7 +39,7 @@
   <CompilerOptions>
     <Version Value="11"/>
     <Target>
-      <Filename Value="threadexample"/>
+      <Filename Value="bin/threadexample"/>
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>

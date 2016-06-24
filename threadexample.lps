@@ -8,8 +8,8 @@
         <Filename Value="threadexample.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="75"/>
-        <CursorPos X="20" Y="86"/>
+        <TopLine Value="42"/>
+        <CursorPos X="47" Y="53"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>
       </Unit0>
@@ -19,7 +19,7 @@
         <EditorIndex Value="2"/>
         <TopLine Value="38"/>
         <CursorPos X="17" Y="48"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="11"/>
         <Loaded Value="True"/>
       </Unit1>
       <Unit2>
@@ -28,7 +28,7 @@
         <EditorIndex Value="1"/>
         <TopLine Value="72"/>
         <CursorPos X="3" Y="87"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="11"/>
         <Loaded Value="True"/>
       </Unit2>
     </Units>
@@ -43,27 +43,27 @@
       </Position2>
       <Position3>
         <Filename Value="threadexample.lpr"/>
-        <Caret Line="77" TopLine="92"/>
+        <Caret Line="103" Column="36" TopLine="60"/>
       </Position3>
       <Position4>
         <Filename Value="threadexample.lpr"/>
-        <Caret Line="103" Column="36" TopLine="60"/>
+        <Caret Line="76" Column="4" TopLine="60"/>
       </Position4>
       <Position5>
         <Filename Value="threadexample.lpr"/>
-        <Caret Line="76" Column="4" TopLine="60"/>
+        <Caret Line="70" Column="4" TopLine="17"/>
       </Position5>
       <Position6>
-        <Filename Value="threadexample.lpr"/>
-        <Caret Line="70" Column="4" TopLine="17"/>
-      </Position6>
-      <Position7>
-        <Filename Value="/usr/share/fpcsrc/3.0.0/packages/fcl-base/src/fptimer.pp"/>
-        <Caret Line="42" Column="5" TopLine="47"/>
-      </Position7>
-      <Position8>
         <Filename Value="/usr/share/fpcsrc/3.0.0/packages/fcl-base/src/fptimer.pp"/>
         <Caret Line="48" Column="17" TopLine="38"/>
+      </Position6>
+      <Position7>
+        <Filename Value="threadexample.lpr"/>
+        <Caret Line="109" Column="24" TopLine="100"/>
+      </Position7>
+      <Position8>
+        <Filename Value="threadexample.lpr"/>
+        <Caret Line="73" Column="5" TopLine="9"/>
       </Position8>
     </JumpHistory>
   </ProjectSession>
